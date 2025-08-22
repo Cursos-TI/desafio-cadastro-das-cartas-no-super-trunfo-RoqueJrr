@@ -45,8 +45,6 @@ int pontos_turisticos2 = 8; // Exemplo de número de pontos turísticos
 
     
 
-
-    return 0;
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
