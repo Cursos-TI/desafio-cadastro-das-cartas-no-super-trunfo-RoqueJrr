@@ -8,7 +8,7 @@
 
 int main() {
 
-    char estado[30] = "Amazonas";
+char estado[30] = "Amazonas";
 char numero_da_carta[30] = "A01";
 char cidade[50] = "Manaus";
 int populacao = 4207714;
@@ -28,20 +28,30 @@ int pontos_turisticos2 = 8; // Exemplo de número de pontos turísticos
     // Exibindo as informações
     
     printf("Estado: %s\n", estado);
-    printf("Número da carta: %s\n", numero_da_carta);
+    printf("Digite o número da carta:", &numero_da_carta);
+    scanf("%s", &numero_da_carta);
     printf("Cidade: %s\n", cidade);
-    printf("População: %d\n", populacao);
-    printf("Área: %.1f km²\n", area);
-    printf("PIB: R$ %.2f bilhões\n", pib);
-    printf("Pontos turísticos: %d\n\n", pontos_turisticos);
+    printf("Digite a população:\n", &populacao);
+    scanf("%d", &populacao);
+    printf("Digite a área: km²\n", &area);
+    scanf("%f", &area);
+    printf("Digite o PIB: R$ bilhões\n", &pib);
+    scanf("%lf", &pib);
+    printf("Digite o número de pontos turísticos: ", pontos_turisticos);
+    scanf("%d", &pontos_turisticos);
 
-    printf("estado2: %s\n", estado2);
-    printf("Número da carta: %s\n", numero_da_carta2);
+     printf("estado2: %s\n", estado2);
+    printf("Digite o numero da carta:", &numero_da_carta2);
+    scanf("%s", &numero_da_carta2);
     printf("Cidade: %s\n", cidade2);
-    printf("População: %d\n", populacao2);
-    printf("Área: %.1f km²\n", area2);
-    printf("PIB: R$ %.2f bilhões\n", pib2);
-    printf("Pontos turísticos: %d\n", pontos_turisticos2);
+    printf("Digite a população:", &populacao2);
+    scanf("%d", &populacao2);
+    printf("Digite a área em Km²:", &area2);
+    scanf("%f", &area2);
+    printf("Digite o PIB em bilhões:", &pib);
+    scanf("%lf", &pib2);
+    printf("Digite o número de pontos turísticos:", &pontos_turisticos2);
+    scanf("%d", &pontos_turisticos2);
 
     
 
