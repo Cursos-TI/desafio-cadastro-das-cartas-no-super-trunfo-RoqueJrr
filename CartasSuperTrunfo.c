@@ -15,6 +15,8 @@ int populacao = 4207714;
 float area = 1559159.0; // em km²
 double pib = 114.0; // em bilhões de R$
 int pontos_turisticos = 10; // Exemplo de número de pontos turísticos
+float densidade_populacional = pib / area
+float pib_percapta = pib / população
 
 char estado2[30] = "Pará";
 char numero_da_carta2[30] = "P01";
@@ -23,6 +25,9 @@ int populacao2 = 8617732;
 float area2 = 1247695.0; // em km²
 double pib2 = 82.0; // em bilhões de R$
 int pontos_turisticos2 = 8; // Exemplo de número de pontos turísticos
+float densidade_populacional2 = populacao2 / area2
+float pib_percapta2 = pib2 / população2 
+
 
 
     // Exibindo as informações
@@ -40,6 +45,9 @@ int pontos_turisticos2 = 8; // Exemplo de número de pontos turísticos
     printf("Digite o número de pontos turísticos: ", pontos_turisticos);
     scanf("%d", &pontos_turisticos);
 
+    float divisao = pib / area;
+    printf("Densidade Populacional: %.2f\n", divisao);
+
      printf("estado2: %s\n", estado2);
     printf("Digite o numero da carta:", &numero_da_carta2);
     scanf("%s", &numero_da_carta2);
@@ -52,6 +60,10 @@ int pontos_turisticos2 = 8; // Exemplo de número de pontos turísticos
     scanf("%lf", &pib2);
     printf("Digite o número de pontos turísticos:", &pontos_turisticos2);
     scanf("%d", &pontos_turisticos2);
+
+      float divisao2 = pib2 / area2;
+    printf("Densidade Populacional: %.2f\n", divisao2); 
+
 
     
 
